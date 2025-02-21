@@ -141,7 +141,7 @@ h2 {
 
 .card.shadow,
 .card-body {
-    padding: 15px;
+    padding: 15px 15px 5px;
     background: linear-gradient(90deg, rgba(1, 0, 10, 1) 0%, rgba(20, 23, 1, 1) 64%, rgba(38, 33, 1, 1) 97%);
 }
 
@@ -149,9 +149,12 @@ h2 {
     color: white;
 }
 
-
 .card-img-top {
     border-radius: 8px;
+}
+
+.card-title{
+    margin-bottom: 20px;
 }
 
 .card-body a {
@@ -169,13 +172,17 @@ h2 {
     color: #33bbf6;
 }
 
+.card-tech-container {
+    margin-top: 15px;
+}
+
 .icon-card {
     width: 45px;
     margin: 15px 10px 0;
 }
 
 /* FOOTER */
-.div-contact{
+.div-contact {
     background-color: rgb(102, 102, 102);
     padding: 10px;
     margin: 30px;
@@ -222,5 +229,12 @@ h2 {
 @media (max-width: 768px) {
     .div-about {
         display: block;
+    }
+}
+
+@media (max-width: 560px) {
+    .icon-card {
+        width: 30px;
+        margin: 10px 5px 0;
     }
 }
