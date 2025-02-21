@@ -102,12 +102,22 @@ h2 {
     background-color: aliceblue;
 }
 
+.div-about {
+    display: flex;
+    width: 100%;
+}
+
+.about-me-img {
+    width: 50%;
+}
+
 .about p {
     width: 50%;
     margin: auto;
     padding: 2rem;
     font-size: 1.3rem;
 }
+
 
 .about span,
 .contact span {
@@ -165,6 +175,13 @@ h2 {
 }
 
 /* FOOTER */
+.div-contact{
+    background-color: rgb(102, 102, 102);
+    padding: 10px;
+    margin: 30px;
+    border-radius: 8px;
+}
+
 .contact p {
     padding: 20px;
     margin: 0;
@@ -180,11 +197,30 @@ h2 {
 
 .contact i:hover {
     transform: translateY(-8px);
-    color: rgb(123, 125, 119);
 }
 
 .copyright {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 15px;
     margin-top: 10px;
+}
+
+@media (max-width: 992px) {
+    .about-me-img {
+        width: 300px;
+        height: 300px;
+        margin: auto;
+    }
+
+    .about p {
+        width: 90%;
+        margin: 10px;
+        text-align: start;
+    }
+}
+
+@media (max-width: 768px) {
+    .div-about {
+        display: block;
+    }
 }
